@@ -1,3 +1,5 @@
+'use strict';
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
@@ -13,7 +15,7 @@ Enemy.prototype.setInitialPosAndSpeed = function () {
     this.x = 0;
     this.y = Math.floor((Math.random() * 3) + 1);
     this.speed = Math.random() * 5;
-}
+};
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -42,17 +44,17 @@ var Player = function() {
     this.setInitialPosition();
     this.dead = false;
     this.sprite = 'images/char-boy.png';
-}
+};
 
 Player.prototype.setInitialPosition = function () {
     this.x = 2;
     this.y = 5
-}
+};
 
 // Update the player's position, required method for game
 Player.prototype.update = function() {
     if (this.dead === true) {
-        this.setInitialPosition()
+        this.setInitialPosition();
         this.dead = false;
     } else if (this.y === 0) {
         console.log("Player won the game!");
@@ -88,7 +90,8 @@ Player.prototype.handleInput = function(keyPressed) {
         }
         break;
     }
-}
+};
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
