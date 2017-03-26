@@ -1,6 +1,8 @@
-frontend-nanodegree-arcade-game
-===============================
+Frogger-esque Arcade Game
+=========================
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+# How to Run
+To run the game simply open the index.html file in your web browser.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+# How to Play
+The goal of the game is to get the player to the blue strip of tiles without hitting any of the enemies (bugs). The player can go left, right, up or down, but is confined to the 5x6 grid of the game. The player starts at the bottom, center tile. Three enemy bugs will be running along at different speeds in the top rows. The player wins the game by making it to any of the tile in the top blue stip. The game continues indefinitely, so after winning the game the player will be transported back to the initial starting position. The player is also transported to the initial starting position after hitting an enemy bug and dying.
